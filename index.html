@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+     <link rel="icon" type="image/x-icon" href="./assets/favicaon mk.jpg">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mukesh Kamble</div>
+        <!-- <button class="theme">Theme</button> -->
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mukesh Kamble</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img id="profile1" src="./assets/mukesh-photo.jpg" alt="Mukesh Kamble's profile picture"
+                title="Mukesh Kamble" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mukesh Kamble</h1>
+            <p class="section__text__p2">Java Full Stack Developer</p>
+            <div class="btn-container">
+                <a href="https://drive.google.com/file/d/1-ZbosZ-PdTR6J2tckAi9VNtWB_335ilz/view?usp=sharing"
+                    target="_blank">
+                    <button class="btn btn-color-2">
+                        See Resume
+
+                    </button>
+                </a>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <a target="_blank" href='https://www.linkedin.com/in/mukesh-kamble-6a5487252/'>
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+                </a>
+
+                <a target="_blank" href="https://github.com/KambleMR">
+                    <img src="./assets/github.png" alt="My Github profile" class="icon" />
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title" id="aboutTitle">About Me</h1>
+        <div class="section-container">
+            <!-- <div class="section__pic-container_2">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div> -->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Educational Experience</h3>
+                        <p>1.5+ years <br />Java Full Stack Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>BCA(2024)</p>
+                        <p>Master of Computer Application<br /><i>(Pursuing Last Year)</i></p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p><span class="highlight"></span>
+                       <span>Hello..! Everyone</span>  <br>
+                        I'm <span class="highlight">Java Full Stack Developer </span> from Maharashtra, India, with hands-on experience in 
+                     in building web and mobile apllications. My core skills include
+                        <span class="highlight">Java (Spring boot) ,JavaScript React & Redux </span>and database like<span class="highlight"> Oracal,MySql,MongoDB.</span> considering
+                        all the aspects of <span class="highlight">UI/UX</span> . I enjoy turning complex problems into
+                        simple,
+                        beautiful and intuitive designs. <br> A
+                        <span class="highlight">Software Engineer</span> , who loves to solve problems.
+
+                        I am having an experience of building high-performing, responsive, beautiful web applications to
+                        deliver a
+                        unique, intuitive user experience that works, also <span class="highlight"> keen interest in
+                            UI/UX</span>
+                        with some nice designing skills. <br> I
+                        am a well-trained teammate who loves to share ideas and prioritizes communication in order to
+                        achieve goals
+                        within the set deadlines. I enjoy being challenged and working on projects that require me to
+                        step outside
+                        of my comfort zone.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML5</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS3</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Redux</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <!-- <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <i>Basic</i>
+                <p>Intermediate</p>
+              </div>
+            </article> -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Tailwind </h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Bootstrap </h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <!-- <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React</h3>
+                <p>Basic</p>
+              </div>
+            </article> -->
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Development Tools & Softwares</h2>
+                    <div class="article-container">
+                        <!-- <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Basic</p>
+              </div>
+            </article> -->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Canva</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Netlify</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article id="lastSkill">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>VS Code</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <!-- <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <!-- project section  -->
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/projects/crypto hunter.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Crypto Hunter</h2>
+                    <div class="btn-container">
+                        <a target="_blank" href="https://github.com/KambleMR/Crypto-hunter.git">
+                            <button class="btn btn-color-2 project-btn">
+                                Github
+                            </button>
+                        </a>
+
+                        <a target="_blank" href="https://crypto-hunter-by-nikhil-kamble.netlify.app/">
+                            <button class="btn btn-color-2 project-btn">
+                                Live Demo
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/projects/weather3.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Live Weather</h2>
+                    <div class="btn-container">
+                        <a href="https://github.com/KambleMR/New-Weather.git" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Github
+                            </button>
+                        </a>
+                        <a target="_blank" href="https://kamblemr.github.io/New-Weather/">
+                            <button class="btn btn-color-2 project-btn">
+                                Live Demo
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/projects/box shadow.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title" style="font-size: 1.2rem;">Box Shadow Generator
+                        Chrome Extension</h2>
+                    <div class="btn-container">
+                          <a href="https://github.com/KambleMR/Box-Shaddow.git" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Github
+                            </button>
+                        </a>
+                        <a target="_blank" href="https://kamblemr.github.io/Box-Shaddow/">
+                            
+                            <button class="btn btn-color-2 project-btn">
+                                Live Demo
+                            </button>
+                        </a>
+<!--                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nikhilkamble02/css-box-shadow-generator-chrome-extension'">
+                            Github
+                        </button>
+                        <button disabled class="btn btn-color-2 project-btn">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+
+
+
+
+
+    </section>
+
+    <!-- blog section  -->
+    <section id="blogs">
+        <p class="section__text__p1">Have a Look on My Recent</p>
+        <h1 class="title">Blogs</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/blogs/blog33.jpg" alt="Project 1" class="blog-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title" style="font-size:1.55rem ;">"Understanding Asynchronous JavaScript"</h2>
+                    <div class="btn-container">
+                        <a target="_blank"
+                            href="https://medium.com/@mukeshkamble63119/understanding-asynchronous-javascript-6e507227145a">
+                            <button class="btn btn-color-2 project-btn">
+                                Read
+                            </button>
+                        </a>
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/blogs/blog-23.jpg" alt="Project 2" class="blog-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">7 new JavaScript Set methods:</h2>
+                    <div class="btn-container">
+                        <a target="_blank"
+                            href="https://medium.com/@mukeshkamble63119/7-new-javascript-set-methods-union-intersection-9c2280140678">
+                            <button class="btn btn-color-2 project-btn">
+                                Read
+                            </button>
+                        </a>
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/blogs/blogimg1.jpg" alt="Project 3" class="blog-img" />
+                    </div>
+
+                    <h2 class="experience-sub-title project-title">3 ways to show line breaks in HTML </h2>
+                    <div class="btn-container">
+                        <a target="_blank" href="https://medium.com/@mukeshkamble63119/3-ways-to-show-line-breaks-in-html-without-ever-using-br-d2a4b809f97d">
+                            <button class="btn btn-color-2 project-btn">
+                                Read
+                            </button>
+                        </a>
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+
+    <!-- contact section  -->
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:nikhilk7214@gmail.com">mukeshofficial2003@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a target="_blank" href="https://www.linkedin.com/in/mukesh-kamble-6a5487252/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 @mukesh Kamble. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
